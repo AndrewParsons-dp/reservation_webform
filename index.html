@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width"
+      ="device-width,"
+      initial-scale="1.0"
+    />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Reservations for petting my cat</h1>
+    <form action="https://httpbin.org/post" method="post">
+      <label for="first_name">First Name</label>
+      <input
+        type="text"
+        name="first_name"
+        id="first_name"
+        placeholder="first name"
+        required="true"
+      />
+      <label for="last_name">Last Name</label>
+      <input
+        type="text"
+        name="last_name"
+        id="last_name"
+        placeholder="last name"
+        required="true"
+      />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email"
+        required="true"
+      />
+      <label for="phone">Phone</label>
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder="phone"
+        required="true"
+      />
+      <br />
+      <label for="start">Start Date</label>
+      <input type="date" name="start" id="start" required="true" />
+      <br />
+      <label for="end">End Date</label>
+      <input type="date" name="end" id="end" required="true" />
+      <br />
+      <label for="rental">Rental Car</label>
+      <input type="checkbox" name="rental" id="rental" value="rentalCar" />
+      <label for="hotel">Hotel</label>
+      <input type="checkbox" name="hotel" id="hotel" value="hotel" />
+      <br />
+      <label for="premium">Premium Package</label>
+      <input type="radio" id="premium" name="package" value="premium" />
+      <br />
+      <label for="Basic">Basic Package</label>
+      <input type="radio" id="basic" name="package" value="basic" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
